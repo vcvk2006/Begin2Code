@@ -1,148 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="About Me page - My first personal webpage"
-    />
-    <meta name="author" content="Your Name Here" />
-    <title>Vaishnav Chandran V K</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      padding: 40px;
+    }
 
+    .contact-form {
+      background-color: #fff;
+      max-width: 500px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
 
-    
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 20px;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        min-height: 100vh;
-        color: #333;
-      }
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
 
-      .card {
-        background-color: white;
-        padding: 40px;
-        border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        margin-bottom: 20px;
-      }
+    .contact-form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
 
-      .profileimg {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        display: block;
-        margin: 0 auto 30px;
-        object-fit: cover;
-        border: 5px solid #667eea;
-      }
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
 
-      h1 {
-        text-align: center;
-        color: #667eea;
-        margin-bottom: 10px;
-        font-size: 2.5em;
-      }
+    .contact-form textarea {
+      resize: vertical;
+    }
 
-      .subtitle {
-        text-align: center;
-        color: #666;
-        margin-bottom: 30px;
-      }
+    .contact-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
 
-      h2 {
-        color: #667eea;
-        border-bottom: 2px ;
-        padding-bottom: 5px;
-      }
-
-      .highlight {
-        background-color: #fffacd;
-        padding: 2px 6px;
-        border-radius: 3px;
-      }
-
-      .contact-info {
-        background-color: #f8f9fa;
-        padding: 20px;
-        border-radius: 10px;
-        border-left: 5px solid #667eea;
-      }
-
-      .footer {
-        text-align: center;
-        color: #666;
-        font-style: italic;
-      }
-      hr {
-      border: none; 
-      height: 2px; 
-      background-color: #1d349b; 
-      }
-
-    </style>
-  </head>
-
-
-
-
-
-  <body>
-    <div class = "card">
-
-      <img
-        src="Profile Picture.jpeg"
-        alt="Profile Picture"
-        class="profileimg">
-
-      <h1>Vaishnav Chandran V K</h1>
-
-      <p class="subtitle">Graphic Designer | UI/UX Designer</p>
-
-      <p class="subtitle">
-        
-      </p>
-
-    </div>
-
-    <div class = "card">
-      <h2>About Me</h2>
-
-      <p>Yes, that guy who designs stuff, makes films, and occasionally questions why he chose engineering. 
-
-        <br><br>
-
-        I'm a Graphic Designer, UI/UX Designer, and Filmmaker. In other words, I stare at screens a lot. I create logos, posters, and interfaces that hopefully don't make people cry (unless it's tears of joy). And when I'm not pushing pixels, I'm out making films that look way more expensive than they actually are.
-      </p>
-
-      <h2>Skills</h2>
-
-      <ul>
-        <li>Adobe Photoshop</li>
-        <li>Adobe Illustrator</li>
-        <li>Adobe InDesign</li>
-        <li>Adobe Premier Pro</li>
-        <li>Figma</li>
-      </ul>
-
-    </div>
-      
-    <div class = "card">
-
-      <p class="subtitle">@vcvk2006</p>
-      <p class="subtitle">
-        <a href="https://www.instagram.com/vcvk2006" target="_blank">LinkedIn</a> |
-        <a href="https://www.github.com/vcvk2006" target="_blank">GitHub</a> |
-        <a href="https://www.youtube.com/@vcvk2006" target="_blank">YouTube</a> |
-        <a href="https://www.instagram.com/vcvk2006" target="_blank">Instagram</a> |
-        <a href="mailto:vaishnavchandranvk@gmail.com" target="_blank">Email</a>
-      </p>
-
-    </div>
-
-  </body>
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <label>
+      Full Name
+      <input type="text" placeholder="Enter your full name" required />
+    </label>
+    <label>
+      Email
+      <input type="email" placeholder="Enter your email address" required />
+    </label>
+    <label>
+      Phone Number
+      <input type="tel" placeholder="Enter your phone number" required />
+    </label>
+    <label>
+      Subject
+      <select>
+        <option>General question</option>
+        <option>Feedback</option>
+      </select>
+    </label>
+    <label>
+      Message
+      <textarea rows="5" placeholder="Type your message here..." required></textarea>
+    </label>
+    <button type="submit">Send Message</button>
+  </div>
+</body>
 </html>
